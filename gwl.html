@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Water Level Predictor</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js for charts -->
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Ground Water Level Predictor</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Predict Ground Water Levels</h1>
+        <p>Enter a location to get predictions on groundwater levels based on historical and real-time data.</p>
+        <input type="text" placeholder="Enter Location" id="location-input">
+        <button id="predict-btn">Predict Now</button>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="container">
+        <section id="map-section">
+            <h2 class="section-title">Map Overview</h2>
+            <div class="map">
+                <div id="map-placeholder">Map will be displayed here.</div>
+            </div>
+        </section>
+
+        <section id="charts-section">
+            <h2 class="section-title">Prediction Charts</h2>
+            <div class="charts">
+                <div id="chart-placeholder">Prediction charts will be displayed here.</div>
+            </div>
+        </section>
+
+        <!-- Groundwater Level Calculator Section -->
+        <section id="calculator-section">
+            <h2 class="section-title">Groundwater Level Calculator</h2>
+            <form id="calculator-form">
+                <label for="rainfall">Rainfall (mm):</label>
+                <input type="number" id="rainfall" required>
+
+                <label for="landuse">Land Use Impact (%):</label>
+                <input type="number" id="landuse" required>
+
+                <label for="population">Population Density (people/km²):</label>
+                <input type="number" id="population" required>
+
+                <label for="elevation">Surface Elevation (m):</label>
+                <input type="number" id="elevation" required>
+
+                <button type="submit">Calculate Groundwater Level</button>
+            </form>
+            <div id="calculator-result">Result will be displayed here.</div>
+        </section>
+
+        <!-- Groundwater Levels for Specific Region Section -->
+        <section id="region-section">
+            <h2 class="section-title">Groundwater Levels for Specific Region</h2>
+            <input type="text" id="region-input" placeholder="Enter Region">
+            <button id="region-btn">Show Groundwater Levels</button>
+            <div id="region-placeholder">Groundwater levels for the specified region will be displayed here.</div>
+        </section>
+
+        <!-- Sustainability Instructions Section -->
+        <section id="sustainability-section">
+            <button id="sustainability-btn">Show Sustainability Instructions</button>
+            <div id="sustainability-instructions" class="hidden">
+                <h2>Sustainability Instructions</h2>
+                <p>Here are some tips to help you contribute to groundwater sustainability:</p>
+                <ul>
+                    <li>Reduce water usage by fixing leaks and using water-saving fixtures.</li>
+                    <li>Avoid excessive use of fertilizers and pesticides that can leach into groundwater.</li>
+                    <li>Support and participate in local groundwater monitoring programs.</li>
+                    <li>Promote and practice sustainable land use to protect groundwater resources.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ground Water Level Predictor. All rights reserved to ERAZERO.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
